@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import DrumKit from "./Challenges/01-DrumKit/DrumKit";
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <DrumKit />
+        <Routes />
       </div>
     );
   }

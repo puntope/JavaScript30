@@ -1,0 +1,25 @@
+.Challenges {
+  display: grid;
+  &__Card {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 4px 5px 10px -5px #000;
+    border: 1px solid #777;
+    margin: 1em;
+
+    a {
+      display: block;
+      width: 100%;
+      background: #fff;
+      text-decoration: none;
+      color: #777;
+    }
+  }
+}

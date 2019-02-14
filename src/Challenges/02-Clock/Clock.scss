@@ -1,0 +1,76 @@
+.ticker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45%;
+    height: 2px;
+
+    top: calc(50% - 1px);
+    left: calc(50% - 40%);
+
+    background: #333;
+  }
+}
+
+.Clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__Base {
+      background: #fff;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      border: 5px solid #333;
+      position: relative;
+      background: url('/img/clock.svg') #fff no-repeat;
+      background-size: 90%;
+      background-position: center;
+
+    &:after {
+      content: "";
+      height: 5%;
+      width: 5%;
+      background: red;
+      display: block;
+      position: absolute;
+      top: 47.5%;
+      border-radius: 100%;
+      left: 47.5%;
+    }
+  }
+
+  &__Second {
+    @extend .ticker;
+  }
+
+  &__Minute {
+    @extend .ticker;
+
+    &:after {
+      height: 4px;
+      top: calc(50% - 2px);
+      left: calc(50% - 40%);
+      width: 45%;
+    }
+  }
+
+  &__Hour {
+    @extend .ticker;
+
+    &:after {
+      height: 6px;
+      top: calc(50% - 3px);
+      left: calc(50% - 35%);
+      width: 40%;
+    }
+  }
+}

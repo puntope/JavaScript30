@@ -1,10 +1,10 @@
-html {
-  font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
-}
+
 
 .DrumKit {
+  font-size: 10px;
+  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center !important;
+  background-size: cover;
+
   &__Keys {
     display: flex;
     flex: 1;
